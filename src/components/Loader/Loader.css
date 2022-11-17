@@ -1,0 +1,32 @@
+.loading-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    animation: loading 2.5s infinite;
+}
+
+.loading {
+    background-color: #372948;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+@keyframes loading {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        rotate: 180deg;
+    }
+
+    50% {
+        opacity: 1;
+    }
+    100% {
+        rotate: 360deg;
+    }
+}
